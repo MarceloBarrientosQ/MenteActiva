@@ -1,114 +1,56 @@
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-500px * 16));  
-  }
-}
-
-.slider {
-  background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100%;
-  margin: auto;
-  overflow: hidden;
+.container.swiper {
   position: relative;
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.container-g.swiper-wrapper {
   display: flex;
   align-items: center;
 }
 
-.slider::before,
-.slider::after {
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  content: "";
-  height: 100%;
-  position: absolute;
-  width: 50px;
-  z-index: 2;
-}
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-.slider::before {
-  left: 0;
-  top: 0;
-}
-
-.slider .slide-track {
-  display: flex;
-  animation: scroll 60s linear infinite;
-  width: calc(500px * 14);
-  gap: 20px;
-  padding: 20px 0;
-}
-
-.slider .slide {
-  width: 500px;
+.opinion-container {
   background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
+  padding: 20px;
+  margin: 10px;
+  width: 280px;
 }
 
-.header-opinion-header {
+.header-opinion-container {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
 }
 
-.header-opinion-header img {
+.header-opinion-container img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-right: 10px;
-  background-color: #ccc;
 }
 
-.header-opinion-header h3 {
-  font-size: 1.1em;
-  font-weight: bold;
-  color: #333;
+.header-opinion-container h3 {
+  font-size: 18px;
   margin: 0;
+  color: #333;
 }
 
-.slider .slide p {
-  font-size: 0.95em;
+.text-opinion p {
+  padding-top: 10px;
+  font-size: 14px;
   line-height: 1.5;
-  color: #555;
-  margin-top: 10px;
-  text-align: left;
+  color: #666;
 }
 
-.slider .slide:nth-child(n + 8) {
-  width: 500px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
+.swiper-button-prev {
+  left: 10px;
 }
 
-.slider .slide p:nth-child(n + 8) {
-  font-size: 0.95em;
-  line-height: 1.5;
-  color: #555;
-  margin-top: 10px;
-  text-align: left;
+.swiper-button-next {
+  right: 10px;
 }
