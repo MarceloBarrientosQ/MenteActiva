@@ -4,22 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mente Activa</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/styles/slider.css" />
-    <link rel="stylesheet" href="/styles/header.css" />
-    <link rel="stylesheet" href="/styles/homeSection.css" />
-    <link rel="stylesheet" href="/styles/chatBotSection.css" />
-    <link rel="stylesheet" href="/styles/communitySection.css" />
-    <link rel="stylesheet" href="/styles/multimediaSection.css" />
-    <link rel="stylesheet" href="/styles/pricingSection.css" />
-    <link rel="stylesheet" href="/styles/calendarSection.css" />
-    <link rel="stylesheet" href="/styles/opinionsSection.css" />
+    <link rel="stylesheet" href="/public/assets/styles/style.css" />
+    <link rel="stylesheet" href="/public/assets/styles/calendarSection.css" />
+    <link rel="stylesheet" href="/public/assets/styles/chatBotSection.css" />
+    <link rel="stylesheet" href="/public/assets/styles/communitySection.css" />
+    <link rel="stylesheet" href="/public/assets/styles/header.css" />
+    <link rel="stylesheet" href="/public/assets/styles/homeSection.css" />
+    <link rel="stylesheet" href="/public/assets/styles/multimediaSection.css" />
+    <link rel="stylesheet" href="/public/assets/styles/opinionsSection.css" />
+    <link rel="stylesheet" href="/public/assets/styles/pricingSection.css" />
+    <link rel="stylesheet" href="/public/assets/styles/slider.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -30,7 +33,7 @@
         <header class="home-header">
           <nav class="home-navegation">
             <div class="home-logo-container">
-              <img src="./public/logoT.png" alt="Mente Actica Logo" />
+              <img src="/public/images/logoT.png" alt="Mente Actica Logo" />
             </div>
 
             <div class="home-navigation-container">
@@ -58,10 +61,7 @@
 
             <button>Start Here</button>
           </div>
-          <img
-            src="./public/SectionImages/WelcomeSection.png"
-            alt="welcome image"
-          />
+          <img src="./public/images/WelcomeSection.png" alt="welcome image" />
         </section>
       </div>
 
@@ -79,10 +79,7 @@
 
           <button>Start your chat</button>
         </div>
-        <img
-          src="./public/SectionImages/ChabotSection.png"
-          alt="chatbot image"
-        />
+        <img src="./public/images/ChabotSection.png" alt="chatbot image" />
       </section>
 
       <!-- COMMUNITY SECTION -->
@@ -102,7 +99,7 @@
           <button>Join the community</button>
         </div>
         <img
-          src="./public/SectionImages/CommunitySection.png"
+          src="./public/images/CommunitySection.png"
           alt="community section image"
         />
       </section>
@@ -118,7 +115,7 @@
           <button>See our plans</button>
         </div>
         <img
-          src="./public/SectionImages/PricingSection.png"
+          src="./public/images/PricingSection.png"
           alt="pricing images section"
         />
       </section>
@@ -135,7 +132,7 @@
           <button>Go to the resources</button>
         </div>
         <img
-          src="./public/SectionImages/MultimediaSection.png"
+          src="./public/images/MultimediaSection.png"
           alt="multimedia section image"
         />
       </section>
@@ -151,7 +148,7 @@
           <button>Go to calendar</button>
         </div>
         <img
-          src="./public/SectionImages/CalendarSection.png"
+          src="./public/images/CalendarSection.png"
           alt="calendar section imagess"
         />
       </section>
@@ -160,223 +157,175 @@
       <section id="opinions-section">
         <h2>Opinions of our users</h2>
 
-        <div class="slider">
-          <div class="slide-track">
-            <div class="slide">
-              <div class="header-opinion">
+        <div class="container swiper">
+          <div class="container-g swiper-wrapper">
+            <!-- Slides -->
+            <div class="opinion-container swiper-slide">
+              <div class="header-opinion-container">
                 <img src="" alt="" />
                 <h3>Pedro Requena</h3>
               </div>
-              <div>
+              <div class="text-opinion">
                 <p>
-                  Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos illo necessitatibus saepe blanditiis asperiores ab
+                  ipsa, vitae, ad dolorum earum dolorem distinctio voluptates
+                  hic nulla aperiam itaque in id dolores!
                 </p>
               </div>
             </div>
-            <div class="slide">
-              <div class="header-opinion">
+
+            <div class="opinion-container swiper-slide">
+              <div class="header-opinion-container">
                 <img src="" alt="" />
-                <h3>Pedro Requena</h3>
+                <h3>Pedro Requena 1</h3>
               </div>
-              <div>
+              <div class="text-opinion">
                 <p>
-                  Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos illo necessitatibus saepe blanditiis asperiores ab
+                  ipsa, vitae, ad dolorum earum dolorem distinctio voluptates
+                  hic nulla aperiam itaque in id dolores!
                 </p>
               </div>
             </div>
-            <div class="slide">
-              <div class="header-opinion">
+            <div class="opinion-container swiper-slide">
+              <div class="header-opinion-container">
                 <img src="" alt="" />
-                <h3>Pedro Requena</h3>
+                <h3>Pedro Requena 2</h3>
               </div>
-              <div>
+              <div class="text-opinion">
                 <p>
-                  Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos illo necessitatibus saepe blanditiis asperiores ab
+                  ipsa, vitae, ad dolorum earum dolorem distinctio voluptates
+                  hic nulla aperiam itaque in id dolores!
                 </p>
               </div>
             </div>
-            <div class="slide">
-              <div class="header-opinion">
+            <div class="opinion-container swiper-slide">
+              <div class="header-opinion-container">
                 <img src="" alt="" />
-                <h3>Pedro Requena</h3>
+                <h3>Pedro Requena 3</h3>
               </div>
-              <div>
+              <div class="text-opinion">
                 <p>
-                  Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos illo necessitatibus saepe blanditiis asperiores ab
+                  ipsa, vitae, ad dolorum earum dolorem distinctio voluptates
+                  hic nulla aperiam itaque in id dolores!
                 </p>
               </div>
             </div>
-            <div class="slide">
-              <div class="header-opinion">
+            <div class="opinion-container swiper-slide">
+              <div class="header-opinion-container">
                 <img src="" alt="" />
-                <h3>Pedro Requena</h3>
+                <h3>Pedro Requena 4</h3>
               </div>
-              <div>
+              <div class="text-opinion">
                 <p>
-                  Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos illo necessitatibus saepe blanditiis asperiores ab
+                  ipsa, vitae, ad dolorum earum dolorem distinctio voluptates
+                  hic nulla aperiam itaque in id dolores!
                 </p>
               </div>
             </div>
-            <div class="slide">
-              <div class="header-opinion">
+            <div class="opinion-container swiper-slide">
+              <div class="header-opinion-container">
                 <img src="" alt="" />
-                <h3>Pedro Requena</h3>
+                <h3>Pedro Requena 5</h3>
               </div>
-              <div>
+              <div class="text-opinion">
                 <p>
-                  Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos illo necessitatibus saepe blanditiis asperiores ab
+                  ipsa, vitae, ad dolorum earum dolorem distinctio voluptates
+                  hic nulla aperiam itaque in id dolores!
                 </p>
               </div>
             </div>
-            <div class="slide">
-              <div class="header-opinion">
+            <div class="opinion-container swiper-slide">
+              <div class="header-opinion-container">
                 <img src="" alt="" />
-                <h3>Pedro Requena</h3>
+                <h3>Pedro Requena 6</h3>
               </div>
-              <div>
+              <div class="text-opinion">
                 <p>
-                  Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos illo necessitatibus saepe blanditiis asperiores ab
+                  ipsa, vitae, ad dolorum earum dolorem distinctio voluptates
+                  hic nulla aperiam itaque in id dolores!
                 </p>
               </div>
             </div>
-            <div class="slide">
-              <div class="opinion-container">
-                <div class="opinion-header">
-                  <img src="" alt="" />
-                  <h3>Pedro Requena</h3>
-                </div>
 
-                <p>
-                  Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
-                </p>
+            <div class="opinion-container swiper-slide">
+              <div class="header-opinion-container">
+                <img src="" alt="" />
+                <h3>Pedro Requena 7</h3>
               </div>
-            </div>
-            <div class="slide">
-              <div class="opinion-container">
-                <div class="opinion-header">
-                  <img src="" alt="" />
-                  <h3>Pedro Requena</h3>
-                </div>
-
+              <div class="text-opinion">
                 <p>
-                  Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
-                </p>
-              </div>
-            </div>
-            <div class="slide">
-              <div class="opinion-container">
-                <div class="opinion-header">
-                  <img src="" alt="" />
-                  <h3>Pedro Requena</h3>
-                </div>
-
-                <p>
-                  Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
-                </p>
-              </div>
-            </div>
-            <div class="slide">
-              <div class="opinion-container">
-                <div class="opinion-header">
-                  <img src="" alt="" />
-                  <h3>Pedro Requena</h3>
-                </div>
-
-                <p>
-                  Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
-                </p>
-              </div>
-            </div>
-            <div class="slide">
-              <div class="opinion-container">
-                <div class="opinion-header">
-                  <img src="" alt="" />
-                  <h3>Pedro Requena</h3>
-                </div>
-
-                <p>
-                  Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
-                </p>
-              </div>
-            </div>
-            <div class="slide">
-              <div class="opinion-container">
-                <div class="opinion-header">
-                  <img src="" alt="" />
-                  <h3>Pedro Requena</h3>
-                </div>
-
-                <p>
-                  Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
-                </p>
-              </div>
-            </div>
-            <div class="slide">
-              <div class="opinion-container">
-                <div class="opinion-header">
-                  <img src="" alt="" />
-                  <h3>Pedro Requena</h3>
-                </div>
-
-                <p>
-                  Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos illo necessitatibus saepe blanditiis asperiores ab
+                  ipsa, vitae, ad dolorum earum dolorem distinctio voluptates
+                  hic nulla aperiam itaque in id dolores!
                 </p>
               </div>
             </div>
           </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </section>
 
       <!-- Footer Section -->
-      <footer id="footer">
-        <img src="./public/logoT.png" alt="Mente Actica Logo" />
+      <footer>
+        <div class="footer-container">
+          <div class="brand-container">
+            <h2>Social Media</h2>
+            <div class="social-icons">
+              <a href="#" aria-label="Twitter"
+                ><img src="./public/icons/twitter.png" alt="Twitter"
+              /></a>
+              <a href="#" aria-label="Instagram"
+                ><img src="./public/icons/ig.png" alt="Instagram"
+              /></a>
+              <a href="#" aria-label="Facebook"
+                ><img src="./public/icons/facebook.svg" alt="Facebook"
+              /></a>
+            </div>
+          </div>
+          <div class="faq-container">
+            <h3>Preguntas frecuentes</h3>
+            <ul>
+              <li>
+                <a href="#">¿En qué dispositivos puedo descargar la app?</a>
+              </li>
+              <li><a href="#">¿Es la app gratuita?</a></li>
+              <li><a href="#">¿Es seguro comprar a través de la app?</a></li>
+              <li>
+                <a href="#">¿Cómo encuentro productos específicos en la app?</a>
+              </li>
+              <li><a href="#">¿Necesito una cuenta para usar la app?</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © 2024 E-gift. Todos los derechos reservados.
+            <a href="#">Términos y Servicios</a> | <a href="#">Privacidad</a>
+          </p>
+        </div>
       </footer>
     </main>
     
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="./main.js"></script>
-    <script src="./slider.js"></script>
   </body>
 </html>
