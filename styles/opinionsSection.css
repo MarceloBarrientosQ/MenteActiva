@@ -8,13 +8,11 @@
   align-items: center;
 }
 
-.opinion-header {
+/* .opinion-header {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-
-
 
 .opinion-header h3 {
   font-size: 1.1em;
@@ -28,7 +26,7 @@
   line-height: 1.5;
   color: #555;
   margin-top: 5px;
-}
+} */
 
 footer {
   background-color: #2e2e2e;
