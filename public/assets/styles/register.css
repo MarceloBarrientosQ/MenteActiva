@@ -48,16 +48,39 @@ input[type="password"]:focus {
     border-color: #4a90e2;
 }
 
+.birthdate-selection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.birthdate-selection select {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.birthdate-selection select:focus {
+    border-color: #4a90e2;
+}
+
 .gender-selection {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.gender-selection input[type="radio"] {
-    margin: 0 5px 0 15px;
+.gender-selection label {
+    display: flex;
+    align-items: center;
+    margin-right: 15px; 
 }
 
+.gender-selection input[type="radio"] {
+    margin-right: 5px;
+}
 .signup-btn {
     background-color: #32bd8a;
     color: white;
