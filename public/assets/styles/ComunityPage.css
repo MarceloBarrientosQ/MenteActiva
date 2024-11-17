@@ -323,7 +323,7 @@ footer {
 }
 .reset-styles {
   opacity: 1;
-  transition: none; /* Remove any lingering transitions */
+  transition: none;  
 }
 .edit-button {
   background-color: transparent;
