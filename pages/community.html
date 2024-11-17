@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\public\assets\styles\ComunityPage.css">
+    <link rel="stylesheet" href="..\public\assets\styles\multimedia\multimediaStyle.css">
+    <link rel="stylesheet" href="/public/assets/styles/style.css" />
+    <link rel="stylesheet" href="/public/assets/styles/header.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+    />
+    <title>Community </title>
+</head>
+<body>
+    <main class="main">
+        <!-- HOME SECTION -->
+        <div id="home-section">
+            <!-- HEADER SECION -->
+            <header class="home-header">
+            <nav class="home-navegation">
+                <div class="home-logo-container">
+                <img src="/public/images/logoT.png" alt="Mente Actica Logo" />
+                </div>
+    
+                <div class="home-navigation-container">
+                <a href="#chatbot-section">ChatBot</a>
+                <a href="#community-section">Community</a>
+                <a href="#pricing-section">Pricing</a>
+                <a href="#multimedia-section">Workshops & Videos</a>
+                <a href="#calendar-section">Calendar</a>
+                </div>
+            </nav>
+            </header>
+
+  <main class="community-section-landing" id="landing-section">
+    <div class="text-container">
+      <h2>Únete a nuestra comunidad</h2>
+      <p>
+        Descubre un espacio donde compartir experiencias, encontrar motivación
+        y conectarte con personas que comparten tus intereses. ¡Únete ahora!
+      </p>
+      <button class="unete-button" id="unete-btn">¡Únete!</button>
+    </div>
+    <div class="image-container">
+      <img src="../public/images/logoT.png" alt="Logo de la comunidad" />
+    </div>
+  </main>
+
+  <div class="content-container" id="content-section" style="display: none">
+    <div class="content-block orange">
+      <div class="block-header">
+        <div class="initial-circle">P</div>
+        <span class="name">Pedro Requena</span>
+      </div>
+      <p class="lorem-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non
+        libero a nulla volutpat efficitur.
+      </p>
+      <div class="block-actions">
+        <button class="edit-button">
+          <img src="../public/images/edit-icon.png" alt="Editar" class="edit-icon" />
+        </button>
+      </div>
+    </div>
+
+    <div class="content-block blue">
+      <div class="block-header">
+        <div class="initial-circle">L</div>
+        <span class="name">Luis Cabanillas</span>
+      </div>
+      <p class="lorem-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non
+        libero a nulla volutpat efficitur.
+      </p>
+      <div class="block-actions">
+        <button class="edit-button">
+          <img src="../public/images/edit-icon.png" alt="Editar" class="edit-icon" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="brand-container">
+        <h2>Social Media</h2>
+        <div class="social-icons">
+          <a href="#" aria-label="Twitter"
+            ><img src="../public/images/Twitter-Logo-2012.png" alt="Twitter"
+          /></a>
+          <a href="#" aria-label="Instagram"
+            ><img src="../public/images/instagram_1384015.png" alt="Instagram"
+          /></a>
+          <a href="#" aria-label="Facebook"
+            ><img src="../public/images/facebook_2175193.png" alt="Facebook"
+          /></a>
+        </div>
+      </div>
+      <div class="faq-container">
+        <h3>Preguntas frecuentes</h3>
+        <ul>
+          <li>
+            <a href="#">¿En qué dispositivos puedo descargar la app?</a>
+          </li>
+          <li><a href="#">¿Es la app gratuita?</a></li>
+          <li><a href="#">¿Es seguro comprar a través de la app?</a></li>
+          <li>
+            <a href="#">¿Cómo encuentro productos específicos en la app?</a>
+          </li>
+          <li><a href="#">¿Necesito una cuenta para usar la app?</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        © 2024 E-gift. Todos los derechos reservados.
+        <a href="#">Términos y Servicios</a> | <a href="#">Privacidad</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const uneteButton = document.getElementById("unete-btn");
+      const contentSection = document.getElementById("content-section");
+      const landingSection = document.getElementById("landing-section");
+      const backToLandingButton = document.getElementById("back-to-landing");
+
+      uneteButton.addEventListener("click", function () {
+        landingSection.style.display = "none";
+        contentSection.style.display = "block";
+      });
+
+      backToLandingButton.addEventListener("click", function () {
+        landingSection.classList.add("reset-styles"); // Add reset styles before showing
+        landingSection.style.display = "block";
+      });
+    });
+  </script>
+</body>
+</html>
